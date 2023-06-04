@@ -1,0 +1,329 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>50/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu May 18 10:58:45 PST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>169 seconds (169468 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_13.UI_13_step01()'><b>UI_13_step01</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_13</td>
+<td></td>
+<td>5</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_13@30331109</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_01.UI_01_step01()'><b>UI_01_step01</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_01</td>
+<td></td>
+<td>12</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_01@6dd93a21</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_10.UI_10_step04()'><b>UI_10_step04</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_10</td>
+<td></td>
+<td>0</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_10@5965844d</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_05.UI_05_step01()'><b>UI_05_step01</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_05</td>
+<td></td>
+<td>5</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_05@3013909b</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_10.UI_10_step02()'><b>UI_10_step02</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_10</td>
+<td></td>
+<td>1</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_10@5965844d</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_10.UI_10_step01()'><b>UI_10_step01</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_10</td>
+<td></td>
+<td>5</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_10@5965844d</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_04.UI_04_step02()'><b>UI_04_step02</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_04</td>
+<td></td>
+<td>2</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_04@12db3386</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_06.UI_06_step01()'><b>UI_06_step01</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_06</td>
+<td></td>
+<td>6</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_06@4a29f290</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_11.UI_11_step05()'><b>UI_11_step05</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_11</td>
+<td></td>
+<td>0</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_11@1bcf67e8</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_11.UI_11_step02()'><b>UI_11_step02</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_11</td>
+<td></td>
+<td>0</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_11@1bcf67e8</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_15.UI_15_step01()'><b>UI_15_step01</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_15</td>
+<td></td>
+<td>8</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_15@65004ff6</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_19.UI_19_step04()'><b>UI_19_step04</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_19</td>
+<td></td>
+<td>0</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_19@383f1975</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_08.UI_08_step03()'><b>UI_08_step03</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_08</td>
+<td></td>
+<td>1</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_08@47f08b81</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_09.UI_09_step03()'><b>UI_09_step03</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_09</td>
+<td></td>
+<td>0</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_09@4b2a30d</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_19.UI_19_step03()'><b>UI_19_step03</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_19</td>
+<td></td>
+<td>0</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_19@383f1975</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_15.UI_15_step02()'><b>UI_15_step02</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_15</td>
+<td></td>
+<td>1</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_15@65004ff6</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_02.UI_02_step02()'><b>UI_02_step02</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_02</td>
+<td></td>
+<td>1</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_02@7b208b45</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_01.UI_01_step02()'><b>UI_01_step02</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_01</td>
+<td></td>
+<td>4</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_01@6dd93a21</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_13.UI_13_step02()'><b>UI_13_step02</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_13</td>
+<td></td>
+<td>10</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_13@30331109</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_09.UI_09_step02()'><b>UI_09_step02</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_09</td>
+<td></td>
+<td>0</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_09@4b2a30d</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_11.UI_11_step04()'><b>UI_11_step04</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_11</td>
+<td></td>
+<td>0</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_11@1bcf67e8</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_02.UI_02_step01()'><b>UI_02_step01</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_02</td>
+<td></td>
+<td>4</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_02@7b208b45</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_06.UI_06_step02()'><b>UI_06_step02</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_06</td>
+<td></td>
+<td>2</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_06@4a29f290</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_14.UI_14_step01()'><b>UI_14_step01</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_14</td>
+<td></td>
+<td>5</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_14@57540fd0</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_08.UI_08_step06()'><b>UI_08_step06</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_08</td>
+<td></td>
+<td>0</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_08@47f08b81</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_08.UI_08_step05()'><b>UI_08_step05</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_08</td>
+<td></td>
+<td>0</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_08@47f08b81</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_08.UI_08_step07()'><b>UI_08_step07</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_08</td>
+<td></td>
+<td>12</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_08@47f08b81</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_19.UI_19_step01()'><b>UI_19_step01</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_19</td>
+<td></td>
+<td>5</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_19@383f1975</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_01.UI_01_step03()'><b>UI_01_step03</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_01</td>
+<td></td>
+<td>1</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_01@6dd93a21</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_14.UI_14_step04()'><b>UI_14_step04</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_14</td>
+<td></td>
+<td>0</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_14@57540fd0</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_03.UI_03_step02()'><b>UI_03_step02</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_03</td>
+<td></td>
+<td>1</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_03@2b0b4d53</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_08.UI_08_step02()'><b>UI_08_step02</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_08</td>
+<td></td>
+<td>0</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_08@47f08b81</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_15.UI_15_step03()'><b>UI_15_step03</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_15</td>
+<td></td>
+<td>3</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_15@65004ff6</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_08.UI_08_step04()'><b>UI_08_step04</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_08</td>
+<td></td>
+<td>0</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_08@47f08b81</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_09.UI_09_step01()'><b>UI_09_step01</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_09</td>
+<td></td>
+<td>5</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_09@4b2a30d</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_08.UI_08_step01()'><b>UI_08_step01</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_08</td>
+<td></td>
+<td>5</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_08@47f08b81</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_14.UI_14_step02()'><b>UI_14_step02</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_14</td>
+<td></td>
+<td>0</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_14@57540fd0</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_19.UI_19_step02()'><b>UI_19_step02</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_19</td>
+<td></td>
+<td>1</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_19@383f1975</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_12.UI_12_step02()'><b>UI_12_step02</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_12</td>
+<td></td>
+<td>0</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_12@74971ed9</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_09.UI_09_step04()'><b>UI_09_step04</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_09</td>
+<td></td>
+<td>1</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_09@4b2a30d</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_05.UI_05_step02()'><b>UI_05_step02</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_05</td>
+<td></td>
+<td>1</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_05@3013909b</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_04.UI_04_step01()'><b>UI_04_step01</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_04</td>
+<td></td>
+<td>6</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_04@12db3386</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_07.UI_07_step01()'><b>UI_07_step01</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_07</td>
+<td></td>
+<td>5</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_07@3c89bb12</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_11.UI_11_step03()'><b>UI_11_step03</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_11</td>
+<td></td>
+<td>0</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_11@1bcf67e8</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_12.UI_12_step01()'><b>UI_12_step01</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_12</td>
+<td></td>
+<td>5</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_12@74971ed9</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_10.UI_10_step03()'><b>UI_10_step03</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_10</td>
+<td></td>
+<td>1</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_10@5965844d</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_11.UI_11_step01()'><b>UI_11_step01</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_11</td>
+<td></td>
+<td>5</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_11@1bcf67e8</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_03.UI_03_step01()'><b>UI_03_step01</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_03</td>
+<td></td>
+<td>5</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_03@2b0b4d53</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_07.UI_07_step02()'><b>UI_07_step02</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_07</td>
+<td></td>
+<td>5</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_07@3c89bb12</td></tr>
+<tr>
+<td title='test_ios_suite.TestCase_UICatalog_UI_14.UI_14_step03()'><b>UI_14_step03</b><br>Test class: test_ios_suite.TestCase_UICatalog_UI_14</td>
+<td></td>
+<td>1</td>
+<td>test_ios_suite.TestCase_UICatalog_UI_14@57540fd0</td></tr>
+</table><p>
+</body>
+</html>

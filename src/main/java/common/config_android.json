@@ -1,0 +1,6 @@
+{
+  "platformName": "Android",
+  "deviceName": "sdk_gphone64_arm64",
+  "automationName": "uiautomator2",
+  "udid": ""
+} 

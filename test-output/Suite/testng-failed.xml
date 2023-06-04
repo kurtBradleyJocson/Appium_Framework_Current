@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="test_android_suite.TestCase_BankAppDemo">
+        <methods>
+          <include name="BAD_02_testStep02"/>
+          <include name="BAD_02_testStep04"/>
+          <include name="BAD_02_testStep01"/>
+          <include name="BAD_02_testStep03"/>
+          <include name="BAD_02_testStep05"/>
+          <include name="BAD_03_testStep03"/>
+          <include name="BAD_03_testStep01"/>
+          <include name="BAD_01_testStep01"/>
+          <include name="BAD_03_testStep07"/>
+          <include name="BAD_01_testStep03"/>
+          <include name="BAD_03_testStep04"/>
+          <include name="BAD_01_testStep02"/>
+          <include name="BAD_03_testStep05"/>
+          <include name="BAD_03_testStep02"/>
+          <include name="BAD_01_testStep04"/>
+          <include name="BAD_03_testStep08"/>
+          <include name="BAD_03_testStep06"/>
+        </methods>
+      </class> <!-- test_android_suite.TestCase_BankAppDemo -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
